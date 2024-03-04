@@ -1,0 +1,84 @@
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Background color of the navbar */
+  margin-bottom: 100px;
+
+}
+
+.navdiv {
+  display: flex; /* Display list items horizontally */
+}
+
+.Navlink  {
+  display: block;
+  padding: 10px 15px; /* Padding around each link */
+  text-decoration: none;
+  color: white; /* Text color of the links */
+}
+
+.Navlink:hover {
+  background-color: #555; /* Background color of the link on hover */
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.maindiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 10%;
+  width: 80vw;
+  height: 70vw;
+}
+
+.eachdiv{
+  background-color: aqua;
+  height: 300px;
+  width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.alignbutton{
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
