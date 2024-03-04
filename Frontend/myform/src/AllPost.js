@@ -6,7 +6,7 @@ export default function AllPost() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/user/getAllUsers");
+        const response = await axios.get("https://deploy-mern-sooty.vercel.app/user/getAllUsers");
         console.log(response.data);
         arrset(response.data.data);
       } catch (error) {

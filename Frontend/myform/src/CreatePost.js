@@ -31,7 +31,7 @@ export default function CreatePost() {
 
   async function signUp(name,age,email,password,confirmPassword) {
     try{
-      const data = await axios.post("http://localhost:4000/user/signup", {
+      const data = await axios.post("https://deploy-mern-sooty.vercel.app/user/signup", {
         name:name,
         age:age,
         email: email,
