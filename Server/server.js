@@ -3,11 +3,11 @@ var cors = require('cors');
 
 const app = express(); // intiate express in app variable
 app.use(express.json()); //global middleware 
-app.use(cors({
-    origin: ['https://deploymern-1j8e.onrender.com/'],
-    methods: ['POST','GET'],
-    credentials: true
-})) ;
+// app.use(cors({
+//     origin: ['https://deploymern-1j8e.onrender.com/'],
+//     methods: ['POST','GET'],
+//     credentials: true
+// })) ;
 
 app.use(cors());
 
