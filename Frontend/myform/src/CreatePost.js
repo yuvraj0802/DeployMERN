@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import axios from 'axios'
 // import { AuthContext } from './Context/AuthProvider';
 import { useNavigate } from 'react-router-dom';
-
+import { BASE_URL } from './secrets';
 
 export default function CreatePost() {
   const Navigate = useNavigate();
@@ -31,7 +31,7 @@ export default function CreatePost() {
 
   async function signUp(name,age,email,password,confirmPassword) {
     try{
-      const data = await axios.post("http://localhost:4000/user/signup", {
+      const data = await axios.post(`${BASE_URL}/user/signup`, {
         name:name,
         age:age,
         email: email,

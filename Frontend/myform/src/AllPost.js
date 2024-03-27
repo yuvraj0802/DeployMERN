@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { BASE_URL } from './secrets';
+
 export default function AllPost() {
 
   const [arr, arrset] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/user/getAllUsers");
+        const response = await axios.get(`${BASE_URL}/user/getAllUsers`);
         console.log(response.data);
         arrset(response.data.data);
       } catch (error) {
