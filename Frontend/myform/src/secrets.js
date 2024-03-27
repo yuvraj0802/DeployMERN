@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://deploymern-1j8e.onrender.com/'

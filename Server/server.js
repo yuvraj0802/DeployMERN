@@ -3,11 +3,11 @@ var cors = require('cors');
 
 const app = express(); // intiate express in app variable
 app.use(express.json()); //global middleware 
-// app.use(cors({
-//     origin: ['http://localhost:3000'],
-//     methods: ['POST','GET'],
-//     credentials: true
-// })) ;
+app.use(cors({
+    origin: ['https://6603097a1392da7400a74b0f--helpful-blancmange-30b696.netlify.app/'],
+    methods: ['POST','GET'],
+    credentials: true
+})) ;
 
 app.use(cors());
 
